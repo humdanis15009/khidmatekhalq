@@ -6,7 +6,7 @@ function Footer() {
       top: 0,
       behavior: "smooth",
     });
-    
+
   };
 
   return (
@@ -45,6 +45,7 @@ function Footer() {
                 <Link className="hover:text-pink-700" to="/Contact">
                   Contact Us
                 </Link>
+                
               </li>
               <li>
                 <Link className="hover:text-pink-700" to="/Faq">
