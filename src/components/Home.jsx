@@ -88,15 +88,16 @@ function Home() {
 
                 <div className="relative z-10 flex items-center justify-center h-full">
                   <div className="text-center text-white bg-opacity-60">
-                    <h1 className="text-6xl font-semibold">
-                      The only charity service that is 100% TRANSPARENT
+                    <h1 className="lg:text-6xl text-xl font-semibold">
+                      The only charity service that is
+                      <br /> 100% TRANSPARENT
                     </h1>
-                    <h3 className="text-4xl pt-7 mx-44 font-semibold">
-                      Donor recieves proofs in the form of images/videos of food stuff being donated along with the corresponding bills.
+                    <h3 className="lg:text-4xl text-xl pt-7 mx-44 font-semibold">
+                      Donor receives proofs in the form of images/videos of food
+                      stuff being donated along with the corresponding bills.
                     </h3>
                   </div>
                 </div>
-                 
               </div>
 
               <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
@@ -107,27 +108,12 @@ function Home() {
 
                 <div className="relative z-10 flex items-center justify-center h-full">
                   <div className="text-center text-white bg-opacity-60">
-                    <h1 className="text-6xl font-semibold">
+                    <h1 className="lg:text-6xl text-xl font-semibold">
                       Zakat: A duty of faith, a joy of the heart
                     </h1>
                   </div>
                 </div>
               </div>
-
-              {/* <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
-                <div
-                  className="absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
-                  style={{ backgroundImage: "url('images/img2.jpeg')" }}
-                ></div>
-
-                <div className="relative z-10 flex items-center justify-center h-full">
-                  <div className="text-center text-white bg-opacity-60">
-                    <h1 className="text-6xl font-semibold">
-                      Every contrbution: A Transformative Change
-                    </h1>
-                  </div>
-                </div>
-              </div> */}
 
               <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
                 <div
@@ -137,27 +123,12 @@ function Home() {
 
                 <div className="relative z-10 flex items-center justify-center h-full">
                   <div className="text-center text-white bg-opacity-60">
-                    <h1 className="text-6xl font-semibold">
+                    <h1 className="lg:text-6xl text-xl font-semibold">
                       Charity purifies the soul and wealth
                     </h1>
                   </div>
                 </div>
               </div>
-
-              {/* <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
-                <div
-                  className="absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
-                  style={{ backgroundImage: "url('images/img4.jpeg')" }}
-                ></div>
-
-                <div className="relative z-10 flex items-center justify-center h-full">
-                  <div className="text-center text-white bg-opacity-60">
-                    <h1 className="text-6xl font-semibold">
-                      Zakat: A duty of faith, a joy of the heart
-                    </h1>
-                  </div>
-                </div>
-              </div> */}
             </Slider>
           </div>
         </>

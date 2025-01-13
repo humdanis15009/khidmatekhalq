@@ -9,11 +9,6 @@ const AboutUs = lazy(() => import("./components/AboutUs"));
 const Contact = lazy(() => import("./components/Contact"));
 const Faq = lazy(() => import("./components/Faq"));
 const Privacy = lazy(() => import("./components/Privacy"));
-const Form1 = lazy(() => import("./components/Form1"));
-const Form2 = lazy(() => import("./components/Form2"));
-const Form3 = lazy(() => import("./components/Form3"));
-const Verify = lazy(() => import("./components/Verify"));
-const UserCardList = lazy(() => import("./components/UserCardList"));
 const AdminDashboard = lazy(() => import("./components/AdminDashboard"));
 const Services = lazy(() => import("./components/Services"));
 
@@ -50,26 +45,6 @@ function App() {
         {
           path: "Privacy",
           element: <Privacy />,
-        },
-        {
-          path: "Form1",
-          element: <Form1 />,
-        },
-        {
-          path: "Form2",
-          element: <Form2 />,
-        },
-        {
-          path: "Form3",
-          element: <Form3 />,
-        },
-        {
-          path: "Verify",
-          element: <Verify />,
-        },
-        {
-          path: "UserCardList",
-          element: <UserCardList />,
         },
         {
           path: "AdminDashboard",

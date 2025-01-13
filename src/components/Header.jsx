@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [pop, setPop] = useState(false);
+  const [pop1, setPop1] = useState(false);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -44,10 +45,10 @@ function Header() {
               className="lg:text-[70px] text-[29px] lg:leading-[60px] leading-[26px] pt-1 font-extrabold"
               style={{ fontFamily: "Dancing Script" }}
             >
-              Khidmat-e-Khalq
+              Zakat Foundation
             </div>
             <p className="text-center inline-block lg:text-[14px] text-[7px] font-extrabold lg:tracking-[14px] tracking-[5px]">
-              Muslim Charity
+              Charity For All
             </p>
           </div>
           <img
@@ -57,59 +58,62 @@ function Header() {
         </div>
 
         <div>
-          <button
-            className="lg:hidden text-white text-2xl p-2"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            &#9776; {/* Hamburger Icon */}
-          </button>
-
           <ul className="lg:text-2xl text-sm font-semibold relative flex lg:gap-x-20 gap-x-2">
-            <ul
-              className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-2xl text-sm font-semibold flex flex-col bg-gray-800 absolute top-14 left-0 w-full lg:w-auto transition-transform ${
-                menuOpen ? "translate-y-0" : "-translate-y-full"
-              }`}
+            <button
+              className="lg:hiddentext-white text-2xl p-2"
+              onClick={() => setPop1((prev) => !prev)}
             >
-              <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-                <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
-                  Home
-                </p>
-              </li>
-
-              <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-                <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
-                  Activity
-                </p>
-              </li>
-
-              <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-                <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
-                  Donate Now
-                </p>
-              </li>
-
-              <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-                <Link
-                  className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full"
-                  to="/ZakatCalculator"
-                >
-                  Zakat Calculator
-                </Link>
-              </li>
-
-              <li
-                className="cursor-pointer relative group py-2 lg:py-0 text-center"
-                onClick={() => setPop((prev) => !prev)}
-              >
-                <p
-                  className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
-                    pop ? "text-green-800" : "text-white"
+              &#9776; {/* Hamburger Icon */}
+            </button>
+            {pop1 && (
+              <div className="fixed inset-0 lg:static flex lg:items-center lg:justify-center items-start justify-start lg:bg-transparent bg-black bg-opacity-70 z-50">
+                <ul
+                  className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-2xl text-sm font-semibold flex flex-col bg-gray-800 lg:top-0 lg:left-0 absolute top-[60px] left-[10px] w-[90%] lg:w-auto transition-transform ${
+                    menuOpen ? "translate-y-0" : "-translate-y-full"
                   }`}
                 >
-                  Contact Us &#x25BE;
-                </p>
-              </li>
-            </ul>
+                  <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+                    <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+                      Home
+                    </p>
+                  </li>
+
+                  <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+                    <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+                      Activity
+                    </p>
+                  </li>
+
+                  <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+                    <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+                      Donate Now
+                    </p>
+                  </li>
+
+                  <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+                    <Link
+                      className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full"
+                      to="/ZakatCalculator"
+                    >
+                      Zakat Calculator
+                    </Link>
+                  </li>
+
+                  <li
+                    className="cursor-pointer relative group py-2 lg:py-0 text-center"
+                    onClick={() => setPop((prev) => !prev)}
+                  >
+                    <p
+                      className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
+                        pop ? "text-green-800" : "text-white"
+                      }`}
+                    >
+                      Contact Us &#x25BE;
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            )}
 
             {pop && (
               <div className="lg:h-[150px] lg:w-[150px] w-[120px] h-[125px] bg-black lg:top-10 top-7 lg:right-0 right-[-7px] bg-opacity-50 rounded-lg absolute z-20">

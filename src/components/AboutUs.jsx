@@ -12,25 +12,25 @@ function AboutUs() {
         <title>About Us - Nikah Junction</title>
         <meta
           name="description"
-          content="Join Nikah Junction, India's trusted Muslim matrimony platform. Find your perfect life partner with ease. Register today!"
+          content="Khidmat-e-Khalq, a dedicated charity focused on uplifting marginalized communities in India. Join us in providing education, healthcare, food, and essential services to those in need. Make a difference today!"
         />
         <meta
           name="keywords"
-          content="Muslim matrimony, Nikah Junction, matrimony service, Muslim marriage, Islamic wedding, find rishta, matrimony India"
+          content="Khidmat-e-Khalq, charity, social services, education, healthcare, food distribution, marginalized communities, India, community support, humanitarian aid."
         />
         <meta name="author" content="Nikah Junction" />
         <link
           rel="canonical"
-          href="https://nikahjunction.netlify.app/AboutUs"
+          href="https://khidmatekhalq.netlify.app/AboutUs"
         />
-        <meta property="og:title" content="About Us - Nikah Junction" />
+        <meta property="og:title" content="About Us - Khidmatekhalq" />
         <meta
           property="og:description"
-          content="Nikah Junction helps you find your ideal life partner. Register now to connect with compatible matches!"
+          content="Khidmat-e-Khalq is a charitable organization committed to supporting marginalized communities across India. We provide essential services like education, healthcare, food, and more to those in need. Join us in making a lasting impact through compassion and action."
         />
         <meta
           property="og:image"
-          content="https://nikahjunction.netlify.app/nikah-logo1.png"
+          content="https://nikahjunction.netlify.app/logo2.png"
         />
         <meta
           property="og:url"
