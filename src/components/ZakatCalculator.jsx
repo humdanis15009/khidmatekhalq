@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 const ZakatCalculator = () => {
-  const [cash, setCash] = useState(0);
-  const [gold, setGold] = useState(0);
-  const [savings, setSavings] = useState(0);
-  const [debts, setDebts] = useState(0);
+  const [cash, setCash] = useState();
+  const [gold, setGold] = useState();
+  const [savings, setSavings] = useState();
+  const [debts, setDebts] = useState();
   const [zakat, setZakat] = useState(null);
 
   const zakatRate = 0.025;

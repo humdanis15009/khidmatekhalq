@@ -11,6 +11,7 @@ const Faq = lazy(() => import("./components/Faq"));
 const Privacy = lazy(() => import("./components/Privacy"));
 const AdminDashboard = lazy(() => import("./components/AdminDashboard"));
 const Services = lazy(() => import("./components/Services"));
+const Volunteer = lazy(() => import("./components/Volunteer"));
 
 function App() {
   const router = createBrowserRouter([
@@ -53,6 +54,10 @@ function App() {
         {
           path: "Services",
           element: <Services />,
+        },
+        {
+          path: "Volunteer",
+          element: <Volunteer />,
         },
       ],
     },
