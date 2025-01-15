@@ -1,0 +1,26 @@
+login route:http://localhost:5000/api/user/login
+input json={ email:"matrixmind777@gmail.com", password:"test" }
+
+register route:http://localhost:5000/api/user/register
+input json={
+        "name": "John Doe",
+        "email": "matrixmind777@gmail.com",
+        "password": "test"
+    }
+    output response if user is already registered=
+    {
+    "message": "User Already exists"
+}
+    output response if user not registered=
+    {
+    "message": "otp send to your mail",
+    "activationToken": "eyJhbGciOiJIUzI1NiIsInR5cCIeyVNg"
+}
+
+otp verify route:http://localhost:5000/api/user/verify
+input json={"otp"=56456, "activationToken": "eyJhbGciOiJIUzI1NiIsInR5cCIeyVNg"}
+
+ output response ={
+    "message": "user registered succecfully",
+ }
+fetch profile route:http://localhost:5000/api/user/me- iska batate ha baad me
