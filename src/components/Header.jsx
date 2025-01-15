@@ -58,44 +58,44 @@
 //         <div>
 //           <ul className="lg:text-2xl text-sm font-semibold relative flex lg:gap-x-20 gap-x-2">
 //             <div className="md:block hidden">
-//               <ul
-//                 className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-2xl text-sm font-semibold flex flex-col bg-gray-800 lg:top-0 lg:left-0 absolute top-[60px] left-[10px] w-[90%] lg:w-auto transition-transform ${
-//                   menuOpen ? "translate-y-0" : "-translate-y-full"
-//                 }`}
+// <ul
+//   className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-2xl text-sm font-semibold flex flex-col bg-gray-800 lg:top-0 lg:left-0 absolute top-[60px] left-[10px] w-[90%] lg:w-auto transition-transform ${
+//     menuOpen ? "translate-y-0" : "-translate-y-full"
+//   }`}
 //               >
-//                 <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-//                   <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
-//                     Home
-//                   </p>
-//                 </li>
+// <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+//   <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+//     Home
+//   </p>
+// </li>
 
-//                 <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-//                   <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
-//                     Donate Now
-//                   </p>
-//                 </li>
+// <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+//   <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+//     Donate Now
+//   </p>
+// </li>
 
-//                 <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
-//                   <Link
-//                     className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full"
-//                     to="/ZakatCalculator"
-//                   >
-//                     Zakat Calculator
-//                   </Link>
-//                 </li>
+// <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+//   <Link
+//     className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full"
+//     to="/ZakatCalculator"
+//   >
+//     Zakat Calculator
+//   </Link>
+// </li>
 
-//                 <li
-//                   className="cursor-pointer relative group py-2 lg:py-0 text-center"
-//                   onClick={() => setPop((prev) => !prev)}
-//                 >
-//                   <p
-//                     className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
-//                       pop ? "text-green-800" : "text-white"
-//                     }`}
-//                   >
-//                     Contact Us &#x25BE;
-//                   </p>
-//                 </li>
+// <li
+//   className="cursor-pointer relative group py-2 lg:py-0 text-center"
+//   onClick={() => setPop((prev) => !prev)}
+// >
+//   <p
+//     className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
+//       pop ? "text-green-800" : "text-white"
+//     }`}
+//   >
+//     Contact Us &#x25BE;
+//   </p>
+// </li>
 //               </ul>
 //             </div>
 
@@ -269,12 +269,12 @@
 //                     src="images/info.png"
 //                     alt="info"
 //                   />
-//                   <p className="lg:text-[16px] text-[14px] lg:pl-2 pl-1">
-//                     <Link className="hover:underline" to="/Contact">
-//                       View more
-//                     </Link>
-//                     ...
-//                   </p>
+// <p className="lg:text-[16px] text-[14px] lg:pl-2 pl-1">
+//   <Link className="hover:underline" to="/Contact">
+//     View more
+//   </Link>
+//   ...
+// </p>
 //                 </div>
 //               </div>
 //             )}
@@ -321,31 +321,60 @@ const Header = () => {
 
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
-      <div className="container mx-auto py-3 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-green-600">
-          Khidmat-e-Khalq
-        </Link>
-        <nav className="hidden md:flex space-x-6 items-center">
-          <Link to="/" className="text-gray-700 hover:text-green-600">
-            Home
-          </Link>
-          <Link to="/donate" className="text-gray-700 hover:text-green-600">
-            Donate Now
-          </Link>
-          <Link
-            to="/zakatCalculator"
-            className="text-gray-700 hover:text-green-600"
+      <div className="flex mx-2 justify-between items-center">
+        <div
+          className="lg:text-[70px] flex text-[29px] lg:leading-[60px] leading-[26px] pt-1 font-extrabold"
+          style={{ fontFamily: "Dancing Script" }}
+        >
+          Zakat Foundation
+          <img
+            className="lg:h-[86px] lg:w-20 h-9 w-8 lg:ml-0 ml-1"
+            src="images/logo2.png"
+          />
+        </div>
+
+        <nav className="hidden mt-16 text-2xl md:flex space-x-8 items-center">
+          <ul
+            className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-2xl text-sm font-semibold flex flex-col bg-gray-800 lg:top-0 lg:left-0 absolute left-[10px] w-[90%] lg:w-auto transition-transform ${
+              menuOpen ? "translate-y-0" : "-translate-y-full"
+            }`}
           >
-            Zakat Calculator
-          </Link>
-          <button
-            onClick={() => setPop((prev) => !prev)}
-            className="text-gray-700 hover:text-green-600"
-          >
-            Contact Us &#x25BE;
-          </button>
+            <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+              <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+                Home
+              </p>
+            </li>
+
+            <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+              <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
+                Donate Now
+              </p>
+            </li>
+
+            <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
+              <Link
+                className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full"
+                to="/ZakatCalculator"
+              >
+                Zakat Calculator
+              </Link>
+            </li>
+
+            <li
+              className="cursor-pointer relative group py-2 lg:py-0 text-center"
+              onClick={() => setPop((prev) => !prev)}
+            >
+              <p
+                className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
+                  pop ? "text-green-800" : "text-white"
+                }`}
+              >
+                Contact Us &#x25BE;
+              </p>
+            </li>
+          </ul>
           {pop && (
-            <div className="absolute right-10 mt-2 w-48 bg-white shadow-md rounded-md">
+            <div className="absolute right-10 mt-64 w-48 bg-white shadow-md rounded-md">
               <a
                 href="https://wa.me/+916394958577"
                 target="_blank"
@@ -366,6 +395,12 @@ const Header = () => {
               >
                 Talk to us...
               </button>
+              <p className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                <Link className="hover:underline" to="/Contact">
+                  View more
+                </Link>
+                ...
+              </p>
             </div>
           )}
         </nav>
@@ -378,7 +413,7 @@ const Header = () => {
         </button>
 
         {menuOpen && (
-          <div className="absolute top-full left-0 w-full bg-white shadow-md md:hidden">
+          <div className="absolute top-full w-[180px] h-[180px] right-0 lg:w-full bg-white shadow-md md:hidden">
             <Link
               to="/"
               className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
@@ -403,6 +438,36 @@ const Header = () => {
             >
               Contact Us
             </button>
+            {pop && (
+              <div className="absolute right-10 mt-64 w-48 bg-white shadow-md rounded-md">
+                <a
+                  href="https://wa.me/+916394958577"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  <FaWhatsapp className="inline mr-2" /> WhatsApp
+                </a>
+                <a
+                  href="mailto:info@khidmatekhalq.org"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  <IoIosMail className="inline mr-2" /> Email
+                </a>
+                <button
+                  onClick={() => setShowContactForm(true)}
+                  className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100"
+                >
+                  Talk to us...
+                </button>
+                <p className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  <Link className="hover:underline" to="/Contact">
+                    View more
+                  </Link>
+                  ...
+                </p>
+              </div>
+            )}
           </div>
         )}
 
@@ -419,7 +484,9 @@ const Header = () => {
                 &times;
               </button>
               <form onSubmit={handleContactSubmit} className="space-y-4">
-                <h2 className="text-lg font-bold text-gray-700">Contact Us</h2>
+                <h2 className="text-lg text-center font-bold text-gray-700">
+                  Contact Us
+                </h2>
                 {message && <p className="text-sm text-green-600">{message}</p>}
                 <div>
                   <label className="block text-sm text-gray-700">Name</label>
