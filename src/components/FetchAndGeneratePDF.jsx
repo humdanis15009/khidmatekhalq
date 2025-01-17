@@ -420,7 +420,7 @@ const FetchAndGeneratePDF = ({ userId }) => {
     doc.setFontSize(10);
     doc.setFont("helvetica", "italic");
     doc.text(
-      `© ${new Date().getFullYear()} Nikah Junction. All rights reserved. Privacy ensured.`,
+      `© ${new Date().getFullYear()} Aasra Foundation. All rights reserved. Privacy ensured.`,
       105,
       yPosition,
       { align: "center" }

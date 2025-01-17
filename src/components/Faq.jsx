@@ -9,41 +9,41 @@ const Faq = () => {
   return (
     <>
       <Helmet>
-        <title>Frequently Asked Questions - Nikah Junction</title>
+        <title>Frequently Asked Questions - Aasra Foundation</title>
         <meta
           name="description"
-          content="Join Nikah Junction, India's trusted Muslim matrimony platform. Find your perfect life partner with ease. Register today!"
+          content="Join Aasra Foundation, India's trusted Muslim matrimony platform. Find your perfect life partner with ease. Register today!"
         />
         <meta
           name="keywords"
-          content="Muslim matrimony, Nikah Junction, matrimony service, Muslim marriage, Islamic wedding, find rishta, matrimony India"
+          content="Muslim matrimony, Aasra Foundation, matrimony service, Muslim marriage, Islamic wedding, find rishta, matrimony India"
         />
-        <meta name="author" content="Nikah Junction" />
-        <link rel="canonical" href="https://nikahjunction.netlify.app/Faq" />
+        <meta name="author" content="Aasra Foundation" />
+        <link rel="canonical" href="https://aasrafoundation.netlify.app/Faq" />
         <meta
           property="og:title"
-          content="Frequently Asked Questions - Nikah Junction"
+          content="Frequently Asked Questions - Aasra Foundation"
         />
         <meta
           property="og:description"
-          content="Nikah Junction helps you find your ideal life partner. Register now to connect with compatible matches!"
+          content="Aasra Foundation helps you find your ideal life partner. Register now to connect with compatible matches!"
         />
         <meta
           property="og:image"
-          content="https://nikahjunction.netlify.app/nikah-logo1.png"
+          content="https://aasrafoundation.netlify.app/nikah-logo1.png"
         />
         <meta
           property="og:url"
-          content="https://nikahjunction.netlify.app/Faq"
+          content="https://aasrafoundation.netlify.app/Faq"
         />
         {/* <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Nikah Junction - Trusted Muslim Matrimony Service"
+          content="Aasra Foundation - Trusted Muslim Matrimony Service"
         />
         <meta
           name="twitter:description"
-          content="Find your perfect Muslim partner on Nikah Junction. Register today!"
+          content="Find your perfect Muslim partner on Aasra Foundation. Register today!"
         />
         <meta
           name="twitter:image"
@@ -58,10 +58,10 @@ const Faq = () => {
         <div className="space-y-6">
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              What is Khidmat-e-Khalq?
+              What is Aasra Foundation?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
-              &ldquo;Khidmat-e-Khalq is a Muslim charity organization dedicated
+              &ldquo;Aasra Foundation is a Muslim charity organization dedicated
               to serving humanity through various initiatives like education,
               healthcare, and disaster relief, inspired by the principles of
               Islam.&rdquo;
@@ -70,7 +70,7 @@ const Faq = () => {
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              How can I contribute to Khidmat-e-Khalq?
+              How can I contribute to Aasra Foundation?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
               &ldquo;You can contribute through online donations, volunteering
@@ -81,7 +81,7 @@ const Faq = () => {
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              Who benefits from Khidmat-e-Khalq’s initiatives?
+              Who benefits from Aasra Foundation’s initiatives?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
               &ldquo;Our initiatives are aimed at underprivileged communities,
@@ -92,18 +92,18 @@ const Faq = () => {
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              Are donations to Khidmat-e-Khalq tax-deductible?
+              Are donations to Aasra Foundation tax-deductible?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
-              &ldquo;Yes, donations made to Khidmat-e-Khalq are eligible for tax
-              exemptions under Indian tax laws. Please check our guidelines for
-              detailed information.&rdquo;
+              &ldquo;Yes, donations made to Aasra Foundation are eligible for
+              tax exemptions under Indian tax laws. Please check our guidelines
+              for detailed information.&rdquo;
             </blockquote>
           </div>
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              How does Khidmat-e-Khalq ensure transparency in the use of funds?
+              How does Aasra Foundation ensure transparency in the use of funds?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
               &ldquo;We provide regular reports and updates on our projects, and
@@ -114,7 +114,7 @@ const Faq = () => {
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              Can I volunteer with Khidmat-e-Khalq?
+              Can I volunteer with Aasra Foundation?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
               &ldquo;Yes, we welcome volunteers who wish to contribute their
@@ -125,7 +125,7 @@ const Faq = () => {
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              What types of projects does Khidmat-e-Khalq undertake?
+              What types of projects does Aasra Foundation undertake?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
               &ldquo;Our projects include educational scholarships, medical
@@ -148,7 +148,7 @@ const Faq = () => {
 
           <div className="bg-white shadow-md rounded-lg p-6">
             <h2 className="lg:text-xl text-lg font-semibold mb-3">
-              How can I stay updated about Khidmat-e-Khalq’s activities?
+              How can I stay updated about Aasra Foundation’s activities?
             </h2>
             <blockquote className="lg:border-l-4 border-l-2 border-blue-500 lg:text-[18px] text-[16px] pl-4 italic text-gray-700">
               &ldquo;You can follow us on our social media platforms or

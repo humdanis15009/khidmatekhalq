@@ -45,7 +45,7 @@ const SliderComponent = () => {
 
   return (
     <>
-      <h1 className="text-center text-5xl mt-8 font-bold text-green-900">
+      <h1 className="text-center lg:text-5xl text-2xl mt-8 font-bold text-green-900">
         VOICES OF CHANGE
       </h1>
       <div className="lg:mt-[60px] lg:mb-16 mb-10 lg:mr-16 lg:ml-20 overflow-hidden lg:h-[560px] relative">

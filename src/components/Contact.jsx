@@ -28,10 +28,10 @@ function Contact() {
 
     emailjs
       .send(
-        "service_vo3nudk",
-        "template_qtbdlas",
+        "service_tn93avz",
+        "template_63baz9z",
         formData,
-        "UvamWASot0cxaVGa6"
+        "qlbyNX3WoAXZOJHFY"
       )
       .then(
         (result) => {
@@ -124,7 +124,7 @@ function Contact() {
                 href="mailto:nikahjunction@gmail.com"
                 className="lg:font-bold font-semibold text-blue-800 hover:underline"
               >
-                nikahjunction@gmail.com
+                aasrafoundation11@gmail.com
               </a>
             </p>
           </div>
@@ -142,7 +142,7 @@ function Contact() {
             <p className="lg:text-lg">
               For WhatsApp assistance:{" "}
               <a
-                href="https://wa.me/7652088756"
+                href={`https://wa.me/+919807419006?text=Hello Aasra Foundation`}
                 className="lg:font-bold font-semibold text-blue-800 hover:underline"
                 target="_blank"
                 rel="noopener noreferrer"

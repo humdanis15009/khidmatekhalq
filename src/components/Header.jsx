@@ -290,7 +290,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase"; // Make sure the correct Firebase config file is imported
+import { db } from "../firebase";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
@@ -326,7 +326,7 @@ const Header = () => {
           className="lg:text-[70px] flex text-[29px] lg:leading-[60px] leading-[26px] pt-1 font-extrabold"
           style={{ fontFamily: "Dancing Script" }}
         >
-          Zakat Foundation
+          Aasra Foundation
           <img
             className="lg:h-[86px] lg:w-20 h-9 w-8 lg:ml-0 ml-1"
             src="images/logo2.png"
@@ -366,7 +366,7 @@ const Header = () => {
             >
               <p
                 className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
-                  pop ? "text-green-800" : "text-white"
+                  pop ? "text-green-800" : "text-black"
                 }`}
               >
                 Contact Us &#x25BE;
@@ -384,7 +384,7 @@ const Header = () => {
                 <FaWhatsapp className="inline mr-2" /> WhatsApp
               </a>
               <a
-                href="mailto:info@khidmatekhalq.org"
+                href="mailto:aasrafoundation11@gmail.com"
                 className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
               >
                 <IoIosMail className="inline mr-2" /> Email

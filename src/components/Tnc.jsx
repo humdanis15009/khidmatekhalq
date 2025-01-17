@@ -58,7 +58,7 @@ function Tnc() {
 
           <p className="text-gray-700 lg:text-[18px] text-[16px]">
             Welcome to
-            <span className="font-bold text-gray-900"> Khidmat-e-Khalq </span>.
+            <span className="font-bold text-gray-900"> Aara Foundation </span>.
             These
             <span className="font-bold text-gray-900">
               {" "}
@@ -137,8 +137,8 @@ function Tnc() {
           <ul class="list-disc pl-5">
             <li>
               <strong>Content Rights:</strong> All content on the website,
-              including text, images, and graphics, is the property of
-              Khidmat-e-Khalq or its content providers.
+              including text, images, and graphics, is the property of Aara
+              Foundation or its content providers.
             </li>
             <li>
               <strong>Prohibited Use:</strong> Users may not reproduce,
@@ -156,7 +156,7 @@ function Tnc() {
               of website content.
             </li>
             <li>
-              <strong>Limited Liability:</strong> Khidmat-e-Khalq is not liable
+              <strong>Limited Liability:</strong> Aara Foundation is not liable
               for any indirect or incidental damages arising from the use of the
               website.
             </li>

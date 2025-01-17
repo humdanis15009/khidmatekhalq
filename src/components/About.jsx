@@ -13,14 +13,14 @@ function About() {
                 className="rounded-lg shadow-lg w-full h-auto transform transition duration-500 hover:scale-105 hover:shadow-2xl hover:brightness-110 hover:rotate-1"
               />
             </div>
-            <div className="md:w-1/2 ml-12 text-center md:text-left">
-              <h1 className="text-3xl font-bold text-gray-800 mb-4">
+            <div className="md:w-1/2 lg:ml-12 text-center md:text-left">
+              <h1 className="text-3xl font-bold text-green-600 mb-4">
                 About Us
               </h1>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Welcome to{" "}
-                <span className="font-bold text-green-600">
-                  Khidmat-e-Khalq
+                <span className="font-bold text-gray-600">
+                  Aasra Foundation
                 </span>
                 , a dedicated Muslim charity organization committed to spreading
                 hope and kindness. Rooted in the principles of{" "}
@@ -30,8 +30,8 @@ function About() {
               </p>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 At{" "}
-                <span className="font-bold text-green-600">
-                  Khidmat-e-Khalq
+                <span className="font-bold text-gray-600">
+                  Aasra Foundation
                 </span>
                 , we strive to provide support for the underprivileged by
                 focusing on key areas like{" "}
@@ -55,8 +55,8 @@ function About() {
                 <span className="font-bold">giving back</span> and being a
                 source of light for those in darkness. Together, let us continue
                 the noble work of{" "}
-                <span className="font-bold text-green-600">
-                  Khidmat-e-Khalq
+                <span className="font-bold text-gray-600">
+                  Aasra Foundation
                 </span>{" "}
                 — serving humanity with humility and love.
               </p>

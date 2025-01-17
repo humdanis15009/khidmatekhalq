@@ -68,25 +68,25 @@ const EmailVerification = () => {
 
   return (
     <>
-    <div className="border-gray-300 border-t-2 flex flex-col items-center p-6 max-w-3xl my-16 mx-auto bg-white shadow-md rounded-lg">
-      <h2 className="text-3xl pb-6 font-semibold mb-4">Email Verification</h2>
-      <input
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Enter your email"
-        className="mb-4 p-2 border border-gray-300 rounded lg:w-[50%] w-[300px]"
-      />
-      <button
-        onClick={handleEmailUpdateAndSendVerification}
-        disabled={isSubmitting}
-        className="bg-pink-700 h-9 w-40 font-semibold text-white rounded hover:bg-pink-600 flex items-center justify-center"
-      >
-        {isSubmitting ? "Sending..." : "Verify Email"}
-      </button>
-      {error && <p className="text-red-500 mt-4">{error}</p>}
-      {success && <p className="text-green-500 mt-4">{success}</p>}
-    </div>
+      <div className="border-gray-300 border-t-2 flex flex-col items-center p-6 max-w-3xl my-16 mx-auto bg-white shadow-md rounded-lg">
+        <h2 className="text-3xl pb-6 font-semibold mb-4">Email Verification</h2>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your email"
+          className="mb-4 p-2 border border-gray-300 rounded lg:w-[50%] w-[300px]"
+        />
+        <button
+          onClick={handleEmailUpdateAndSendVerification}
+          disabled={isSubmitting}
+          className="bg-pink-700 h-9 w-40 font-semibold text-white rounded hover:bg-pink-600 flex items-center justify-center"
+        >
+          {isSubmitting ? "Sending..." : "Verify Email"}
+        </button>
+        {error && <p className="text-red-500 mt-4">{error}</p>}
+        {success && <p className="text-green-500 mt-4">{success}</p>}
+      </div>
     </>
   );
 };

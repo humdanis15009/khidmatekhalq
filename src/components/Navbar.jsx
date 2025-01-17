@@ -75,7 +75,7 @@ const Navbar = () => {
                 className="lg:text-[70px] text-[26px]"
                 style={{ fontFamily: "Dancing Script" }}
               >
-                Foundation
+                Aasra Foundation
               </div>
             </Link>
             <img

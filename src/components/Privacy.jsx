@@ -8,31 +8,34 @@ const Privacy = () => {
 
   return (
     <>
-    <Helmet>
-        <title>Privacy Policy - Nikah Junction</title>
+      <Helmet>
+        <title>About Us - Aasra Foundation</title>
         <meta
           name="description"
-          content="Join Nikah Junction, India's trusted Muslim matrimony platform. Find your perfect life partner with ease. Register today!"
+          content="Aasra Foundation, a dedicated charity focused on uplifting marginalized communities in India. Join us in providing education, healthcare, food, and essential services to those in need. Make a difference today!"
         />
         <meta
           name="keywords"
-          content="Muslim matrimony, Nikah Junction, matrimony service, Muslim marriage, Islamic wedding, find rishta, matrimony India"
+          content="Aasra Foundation, charity, social services, education, healthcare, food distribution, marginalized communities, India, community support, humanitarian aid."
         />
-        <meta name="author" content="Nikah Junction" />
-        <link rel="canonical" href="https://nikahjunction.netlify.app/Privacy" />
-        <meta
-          property="og:title"
-          content="Privacy Policy - Nikah Junction"
+        <meta name="author" content="Aasra Foundation" />
+        <link
+          rel="canonical"
+          href="https://aasrafoundation.netlify.app/AboutUs"
         />
+        <meta property="og:title" content="About Us - Aasra Foundation" />
         <meta
           property="og:description"
-          content="Nikah Junction helps you find your ideal life partner. Register now to connect with compatible matches!"
+          content="Aasra Foundation is a charitable organization committed to supporting marginalized communities across India. We provide essential services like education, healthcare, food, and more to those in need. Join us in making a lasting impact through compassion and action."
         />
         <meta
           property="og:image"
-          content="https://nikahjunction.netlify.app/nikah-logo1.png"
+          content="https://aasrafoundation.netlify.app/logo2.png"
         />
-        <meta property="og:url" content="https://nikahjunction.netlify.app/Privacy" />
+        <meta
+          property="og:url"
+          content="https://aasrafoundation.netlify.app/AboutUs"
+        />
         {/* <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
@@ -52,29 +55,35 @@ const Privacy = () => {
           Privacy Policy
         </h1>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          At &ldquo;Nikah Junction&rdquo;, we are committed to protecting your
-          privacy. This Privacy Policy explains how we collect, use, and
-          disclose your personal information.
+          At <strong>Aasra Foundation</strong>, we are committed to protecting
+          your privacy and maintaining the trust you place in us. This Privacy
+          Policy outlines how we collect, use, and safeguard your personal
+          information. Our commitment to 100% transparency ensures that every
+          action we take aligns with our mission of accountability and service
+          to the community.
         </p>
 
         <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
           1. Information We Collect:
         </h2>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          We collect the following types of information:
+          We collect the following types of information to ensure efficient
+          operations and provide the best possible support:
           <ul className="list-disc list-inside ml-5">
             <li>
               <strong>Personal Information:</strong> Includes your name, email
-              address, phone number, and other details you provide when
-              registering.
+              address, phone number, and address when you donate or register as
+              a volunteer.
             </li>
             <li>
-              <strong>Usage Data:</strong> Information about how you use our
-              website, such as IP address, browser type, and pages visited.
+              <strong>Transaction Data:</strong> Details of your contributions,
+              including payment information, to ensure transparency in fund
+              allocation.
             </li>
             <li>
-              <strong>Cookies:</strong> Small data files stored on your device
-              to enhance your user experience.
+              <strong>Usage Data:</strong> Information about how you interact
+              with our website, such as IP address and browsing behavior, to
+              improve our services.
             </li>
           </ul>
         </p>
@@ -83,87 +92,105 @@ const Privacy = () => {
           2. How We Use Your Information:
         </h2>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          We use your information to:
+          Your information is used exclusively for charitable purposes and to
+          maintain transparency. Specifically, we use it to:
           <ul className="list-disc list-inside ml-5">
             <li>
-              <strong>Provide and Improve Our Services:</strong> To enhance your
-              experience on &ldquo;Nikah Junction&rdquo; and tailor content to your
-              preferences.
+              <strong>Facilitate Donations:</strong> To process your
+              contributions securely and provide receipts.
             </li>
             <li>
-              <strong>Communicate with You:</strong> To send you updates,
-              newsletters, and other relevant information.
+              <strong>Provide Transparency:</strong> To share how funds are
+              utilized for community projects, ensuring accountability.
             </li>
             <li>
-              <strong>Ensure Security:</strong> To protect our website and
-              prevent fraudulent activities.
+              <strong>Engage with Supporters:</strong> To update you on our
+              initiatives, upcoming events, and the impact of your
+              contributions.
+            </li>
+            <li>
+              <strong>Improve Our Services:</strong> To optimize our website and
+              ensure a seamless user experience.
             </li>
           </ul>
         </p>
 
         <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
-          3. Sharing Your Information:
+          3. Transparency and Fund Allocation:
         </h2>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          We do not share your personal information with third parties except:
+          At Aasra Foundation, we maintain 100% transparency in the allocation
+          of funds. Donors can request detailed reports on how their
+          contributions are utilized. Our annual financial statements are also
+          made publicly available to reflect our commitment to honesty and
+          accountability.
+        </p>
+
+        <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
+          4. Sharing Your Information:
+        </h2>
+        <p className="mb-4 lg:text-[18px] text-[16px]">
+          We do not sell, trade, or share your personal information with third
+          parties, except:
           <ul className="list-disc list-inside ml-5">
             <li>
-              <strong>Service Providers:</strong> Who assist us in operating our
-              website and providing services to you.
+              <strong>Service Providers:</strong> Trusted third parties who
+              assist us in processing payments or managing donor communications.
             </li>
             <li>
-              <strong>Legal Requirements:</strong> If required by law or to
-              protect our rights and safety.
+              <strong>Legal Compliance:</strong> If required by law or to
+              protect the rights and safety of Aasra Foundation and its
+              supporters.
             </li>
           </ul>
         </p>
 
         <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
-          4. Your Choices:
+          5. Your Choices:
         </h2>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          You have the right to:
+          You have full control over your information. You can:
           <ul className="list-disc list-inside ml-5">
             <li>
-              <strong>Access and Update Your Information:</strong> By logging
-              into your account or contacting us.
+              <strong>Access and Update:</strong> Update your personal details
+              or donation preferences by contacting us directly.
             </li>
             <li>
-              <strong>Opt-Out:</strong> From receiving marketing communications
-              by following the unsubscribe instructions.
+              <strong>Opt-Out:</strong> Choose not to receive updates or
+              newsletters by unsubscribing via the provided link.
             </li>
           </ul>
         </p>
 
-        <h2 className="lg:text-2xl text-lg font-semibold :mb-3">
-          5. Security:
+        <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
+          6. Security:
         </h2>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          We implement security measures to protect your personal information.
-          However, no online transmission or electronic storage method is
-          completely secure.
+          We employ robust security measures to protect your personal
+          information. However, no method of online transmission or storage is
+          entirely secure, and we encourage you to reach out with any concerns.
         </p>
 
         <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
-          6. Changes to This Policy:
+          7. Changes to This Policy:
         </h2>
         <p className="mb-4 lg:text-[18px] text-[16px]">
-          We may update this Privacy Policy from time to time. We will notify
-          you of any significant changes by posting the new policy on our
-          website.
+          Aasra Foundation reserves the right to update this Privacy Policy as
+          needed. Significant changes will be communicated through our website
+          or via email.
         </p>
 
         <h2 className="lg:text-2xl text-lg font-semibold lg:mb-3">
-          7. Contact Us:
+          8. Contact Us:
         </h2>
-        <p>
-          If you have any questions about this Privacy Policy, please contact us
-          at{" "}
+        <p className="lg:text-[18px] text-[16px]">
+          If you have any questions or require further information, please
+          contact us at:{" "}
           <a
-            href="mailto:nikahjunction@gmail.com"
+            href="mailto:contact@aasrafoundation.org"
             className="text-blue-500 hover:underline"
           >
-            nikahjunction@gmail.com
+            contact@aasrafoundation.org
           </a>
           .
         </p>

@@ -24,16 +24,16 @@ function Card() {
 
   return (
     <>
-      <div className="flex flex-col lg:flex-row justify-evenly mx-auto lg:gap-x-24 gap-y-10 lg:my-20 mb-16">
+      <div className="flex flex-col mt-12 lg:flex-row justify-evenly mx-auto lg:gap-x-24 gap-y-10 lg:my-20 mb-16">
         {/* First Card */}
         <div className="w-full flex justify-center items-center">
-          <div className="lg:w-[25vw] w-[80%] h-[125px] lg:h-[35vh] shadow-xl rounded-2xl border-t-2 border-gray-200 flex justify-center items-center flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/50 hover:border-green-500">
+          <div className="lg:w-[25vw] w-[80%] h-[150px] lg:h-[35vh] shadow-xl rounded-2xl border-t-2 border-gray-200 flex justify-center items-center flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/50 hover:border-green-500">
             <img
-              className="lg:h-[80px] lg:w-[80px] h-[35px] w-[35px] lg:mb-3 mt-3"
-              src="images/help.png"
+              className="lg:h-[80px] lg:w-[80px] h-[35px] w-[35px] lg:my-3 my-2"
+              src="images/public-service.png"
               alt="members"
             />
-            <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mt-2 lg:my-3">
+            <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mb-2 lg:my-3">
               {str}
             </span>
             <p className="lg:text-3xl text-[11px] text-gray-600">
@@ -44,34 +44,34 @@ function Card() {
 
         {/* Second Card */}
         <div className="w-full flex justify-center items-center">
-          <div className="lg:w-[25vw] w-[80%] h-[125px] lg:h-[35vh] shadow-xl rounded-2xl border-t-2 border-gray-200 flex justify-center items-center flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/50 hover:border-green-500">
+          <div className="lg:w-[25vw] w-[80%] h-[150px] lg:h-[35vh] shadow-xl rounded-2xl border-t-2 border-gray-200 flex justify-center items-center flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/50 hover:border-green-500">
             <img
-              className="lg:h-[80px] lg:w-[80px] h-[35px] w-[35px] lg:mb-3 mt-3"
-              src="images/student-funded.jpeg"
+              className="lg:h-[80px] lg:w-[80px] h-[35px] w-[35px] lg:my-3 my-2"
+              src="images/diamond.png"
               alt="stories"
             />
-            <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mt-2 lg:my-3">
-              50+
+            <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mb-2 lg:my-3">
+              74
             </span>
             <p className="lg:text-3xl text-[11px] text-gray-600">
-              School Children Funded
+              Marriages Helped
             </p>
           </div>
         </div>
 
         {/* Third Card */}
         <div className="w-full flex justify-center items-center">
-          <div className="lg:w-[25vw] w-[80%] h-[125px] lg:h-[35vh] shadow-xl rounded-2xl border-t-2 border-gray-200 flex justify-center items-center flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/50 hover:border-green-500">
+          <div className="lg:w-[25vw] w-[80%] h-[150px] lg:h-[35vh] shadow-xl rounded-2xl border-t-2 border-gray-200 flex justify-center items-center flex-col transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-lg hover:shadow-green-500/50 hover:border-green-500">
             <img
-              className="lg:h-[80px] lg:w-[80px] h-[35px] w-[35px] lg:mb-3 mt-3"
-              src="images/skilled.jpeg"
+              className="lg:h-[80px] lg:w-[80px] h-[35px] w-[35px] lg:my-3 my-2"
+              src="images/man.png"
               alt="cities"
             />
-            <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mt-2 lg:my-3">
-              127+
+            <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mb-2 lg:my-3">
+              627+
             </span>
             <p className="lg:text-3xl text-[11px] text-gray-600">
-              Individuals Skilled
+              Individuals Helped
             </p>
           </div>
         </div>

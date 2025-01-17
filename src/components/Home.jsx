@@ -50,30 +50,30 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Khidmat-e-Khalq - Empowering Communities Through Charity</title>
+        <title>Aasra Foundation - Empowering Communities Through Charity</title>
         <meta
           name="description"
-          content="Khidmat-e-Khalq is a trusted Muslim charity platform in India. Join us in making a difference by supporting those in need through various charitable initiatives."
+          content="Aasra Foundation is a trusted Muslim charity platform in India. Join us in making a difference by supporting those in need through various charitable initiatives."
         />
         <meta
           name="keywords"
-          content="Muslim charity, Khidmat-e-Khalq, Islamic charity, community support, donations, zakat, sadaqah, helping the needy, charity India"
+          content="Muslim charity, Aasra Foundation, Islamic charity, community support, donations, zakat, sadaqah, helping the needy, charity India"
         />
-        <meta name="author" content="Khidmat-e-Khalq" />
+        <meta name="author" content="Aasra Foundation" />
         <link rel="canonical" href="https://khidmatekhalq.netlify.app" />
         <meta
           property="og:title"
-          content="Khidmat-e-Khalq - Empowering Communities Through Charity"
+          content="Aasra Foundation - Empowering Communities Through Charity"
         />
         <meta
           property="og:description"
-          content="Join Khidmat-e-Khalq, India's trusted Muslim charity platform, and contribute to transforming lives. Together, we can make a difference!"
+          content="Join Aasra Foundation, India's trusted Muslim charity platform, and contribute to transforming lives. Together, we can make a difference!"
         />
         <meta
           property="og:image"
-          content="https://khidmatekhalq.netlify.app/khidmat-logo.png"
+          content="https://aasrafoundation.netlify.app/khidmat-logo.png"
         />
-        <meta property="og:url" content="https://khidmatekhalq.netlify.app" />
+        <meta property="og:url" content="https://aasrafoundation.netlify.app" />
       </Helmet>
 
       <div className="flex relative">
@@ -82,8 +82,13 @@ function Home() {
             <Slider {...settings} className="relative ">
               <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
                 <div
-                  className="hidden md:block absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
+                  className="hidden object-contain md:block absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
                   style={{ backgroundImage: "url('images/img4.jpeg')" }}
+                ></div>
+
+                <div
+                  className="md:hidden object-contain absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
+                  style={{ backgroundImage: "url('images/charity1.jpg')" }}
                 ></div>
 
                 <div className="relative z-10 flex items-center justify-center h-full">
@@ -102,8 +107,13 @@ function Home() {
 
               <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
                 <div
-                  className="sm:hidden absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
+                  className="hidden object-contain md:block absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
                   style={{ backgroundImage: "url('images/img1.jpeg')" }}
+                ></div>
+
+                <div
+                  className="md:hidden object-contain absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
+                  style={{ backgroundImage: "url('images/charity3.jpg')" }}
                 ></div>
 
                 <div className="relative z-10 flex items-center justify-center h-full">
@@ -117,8 +127,13 @@ function Home() {
 
               <div className="relative w-full h-screen bg-no-repeat bg-cover bg-center">
                 <div
-                  className="sm:hidden absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
+                  className="hidden object-contain md:block absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
                   style={{ backgroundImage: "url('images/img3.jpeg')" }}
+                ></div>
+
+                <div
+                  className="md:hidden object-contain absolute inset-0 bg-no-repeat bg-cover bg-center z-0"
+                  style={{ backgroundImage: "url('images/charity4.jpg')" }}
                 ></div>
 
                 <div className="relative z-10 flex items-center justify-center h-full">

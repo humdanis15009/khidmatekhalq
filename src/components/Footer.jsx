@@ -14,13 +14,16 @@ function Footer() {
         <div className="flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0">
           {/* Logo Section */}
           <div className="flex items-center space-x-4">
-            <div className="lg:text-[70px] text-[30px] font-DancingScript">
-              Khidmat-e-Khalq
+            <div
+              className="lg:text-[70px] text-[30px] font-DancingScript"
+              style={{ fontFamily: "Dancing Script" }}
+            >
+              Aasra Foundation
             </div>
             <img
               className="lg:h-24 lg:w-20 h-9 w-8"
               src="images/logo2.png"
-              alt="Khidmat-e-Khalq Logo"
+              alt="Aasra Foundation Logo"
             />
           </div>
         </div>
@@ -156,7 +159,10 @@ function Footer() {
         {/* Footer Bottom Section */}
         <div className="lg:border-t-4 border-t-2 border-yellow-500 pt-6 mt-6">
           <div className="text-center text-[12px] lg:text-[14px] text-gray-400">
-            <p>&copy; 2024 Khidmat-e-Khalq. All Rights Reserved.</p>
+            <p>
+              &copy; {new Date().getFullYear()} Aasra Foundation. All Rights
+              Reserved.
+            </p>
             <p>Designed with ❤️ for the betterment of the community.</p>
           </div>
         </div>

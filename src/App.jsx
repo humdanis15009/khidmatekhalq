@@ -69,9 +69,9 @@ function App() {
         fallback={
           <div className="min-h-screen flex items-center justify-center">
             <img
-              src="images/loading1.webp"
+              src="images/loading.gif"
               alt="Loading..."
-              className="lg:w-40 lg:h-40 w-24 h-24"
+              className="lg:w-48 lg:h-40 w-24 h-24"
             />
           </div>
         }

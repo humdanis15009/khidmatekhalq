@@ -218,41 +218,53 @@ const AdminDashboard = () => {
   return (
     <>
       <Helmet>
-        <title>Admin Dashboard - Nikah Junction</title>
+        <title>Admin Dashboard - Aasra Foundation</title>
         <meta
           name="description"
-          content="Join Nikah Junction, India's trusted Muslim matrimony platform. Find your perfect life partner with ease. Register today!"
+          content="Join Aasra Foundation, India's trusted Muslim matrimony platform. Find your perfect life partner with ease. Register today!"
         />
         <meta
           name="keywords"
-          content="Muslim matrimony, Nikah Junction, matrimony service, Muslim marriage, Islamic wedding, find rishta, matrimony India"
+          content="Muslim matrimony, Aasra Foundation, matrimony service, Muslim marriage, Islamic wedding, find rishta, matrimony India"
         />
-        <meta name="author" content="Nikah Junction" />
+        <meta name="author" content="Aasra Foundation" />
         <link
           rel="canonical"
-          href="https://nikahjunction.netlify.app/AdminDashboard"
+          href="https:/aasrafoundation
+          
+          
+          .netlify.app/AdminDashboard"
         />
-        <meta property="og:title" content="Admin Dashboard - Nikah Junction" />
+        <meta
+          property="og:title"
+          content="Admin Dashboard - Aasra Foundation"
+        />
         <meta
           property="og:description"
-          content="Nikah Junction helps you find your ideal life partner. Register now to connect with compatible matches!"
+          content="Aasra Foundation helps you find your ideal life partner. Register now to connect with compatible matches!"
         />
         <meta
           property="og:image"
-          content="https://nikahjunction.netlify.app/nikah-logo1.png"
+          content="https:/aasrafoundation
+          
+          
+          .netlify.app/nikah-logo1.png"
         />
         <meta
           property="og:url"
-          content="https://nikahjunction.netlify.app/AdminDashboard"
+          content="https:/aasrafoundation
+          
+          
+          .netlify.app/AdminDashboard"
         />
         {/* <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Nikah Junction - Trusted Muslim Matrimony Service"
+          content="Aasra Foundation - Trusted Muslim Matrimony Service"
         />
         <meta
           name="twitter:description"
-          content="Find your perfect Muslim partner on Nikah Junction. Register today!"
+          content="Find your perfect Muslim partner on Aasra Foundation. Register today!"
         />
         <meta
           name="twitter:image"
