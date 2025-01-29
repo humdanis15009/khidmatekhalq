@@ -50,6 +50,7 @@ const Privacy = () => {
           content="https://yourwebsite.com/twitter-image.jpg"
         /> */}
       </Helmet>
+
       <div className="max-w-6xl mx-auto p-6 bg-white shadow-md rounded-lg">
         <h1 className="lg:text-4xl text-2xl font-bold lg:my-6 mb-2 text-center text-pink-700">
           Privacy Policy

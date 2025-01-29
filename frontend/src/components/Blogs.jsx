@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { db } from "../Firebase";
-import { collection, addDoc } from "firebase/firestore";
+// import { db } from "../Firebase";
+// import { collection, addDoc } from "firebase/firestore";
 import { Helmet } from "react-helmet-async";
 import QRCode from "react-qr-code";
-// import QRCode from "react-qr-code";
 
 const Blogs = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -38,7 +37,7 @@ const Blogs = () => {
   const [amount] = useState(500);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const merchantUpiId = "humdanis786@oksbi";
-  const userName = "Khidmat-e-Khalq";
+  const userName = "Aasra Fondation";
 
   const upiUrl = `upi://pay?pa=${merchantUpiId}&pn=${encodeURIComponent(
     userName

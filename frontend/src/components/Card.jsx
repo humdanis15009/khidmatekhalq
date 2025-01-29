@@ -1,26 +1,26 @@
 import { useState, useEffect } from "react";
-import { db } from "../Firebase";
-import { collection, onSnapshot } from "firebase/firestore";
+// import { db } from "../Firebase";
+// import { collection, onSnapshot } from "firebase/firestore";
 
 function Card() {
-  const [userCount, setUserCount] = useState();
-  const [str, setStr] = useState();
+  // const [userCount, setUserCount] = useState();
+  // const [str, setStr] = useState();
 
-  useEffect(() => {
-    const usersCollection = collection(db, "Biodata");
+  // useEffect(() => {
+    // const usersCollection = collection(db, "Biodata");
 
-    const unsubscribe = onSnapshot(usersCollection, (snapshot) => {
-      setUserCount(snapshot.size);
-    });
+    // const unsubscribe = onSnapshot(usersCollection, (snapshot) => {
+    //   setUserCount(snapshot.size);
+    // });
 
-    let data = 100 + userCount;
-    let strr = data.toString();
-    let strrr = strr.substring(0, 2) + strr.substring(2);
+    // let data = 100 + userCount;
+    // let strr = data.toString();
+    // let strrr = strr.substring(0, 2) + strr.substring(2);
 
-    setStr(strrr);
+    // setStr(strrr);
 
-    return () => unsubscribe();
-  }, [userCount]);
+  //   return () => unsubscribe();
+  // }, [userCount]);
 
   return (
     <>
@@ -34,7 +34,7 @@ function Card() {
               alt="members"
             />
             <span className="lg:text-4xl text-xl lg:font-extrabold font-semibold mb-2 lg:my-3">
-              {str}
+              {/* {str} */}
             </span>
             <p className="lg:text-3xl text-[11px] text-gray-600">
               Small Businesses Helped

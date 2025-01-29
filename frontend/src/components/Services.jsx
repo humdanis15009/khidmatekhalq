@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { db } from "../Firebase";
-import { collection, addDoc } from "firebase/firestore";
+// import { db } from "../Firebase";
+// import { collection, addDoc } from "firebase/firestore";
 import { Helmet } from "react-helmet-async";
 import QRCode from "react-qr-code";
 
 const Services = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    service: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   name: "",
+  //   phone: "",
+  //   service: "",
+  // });
   const [isVerificationPopupOpen, setVerificationPopupOpen] = useState(false); // State to toggle second popup
-  const [userDetails, setUserDetails] = useState({
-    fullName: "",
-    mobileNumber: "",
-    amountPaid: "",
-  });
+  // const [userDetails, setUserDetails] = useState({
+  //   fullName: "",
+  //   mobileNumber: "",
+  //   amountPaid: "",
+  // });
 
   // Handle input changes in the second popup form
   const handleInputChange = (e) => {
@@ -135,6 +135,7 @@ const Services = () => {
           content="https://yourwebsite.com/twitter-image.jpg"
         /> */}
       </Helmet>
+
       <div className="relative">
         <div className="p-8 lg:mt-1 mx-auto max-w-6xl rounded-lg shadow-md">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
