@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { db } from "../Firebase";
-import { collection, addDoc } from "firebase/firestore";
+// import { collection, addDoc } from "firebase/firestore";
 import { Helmet } from "react-helmet-async";
 import QRCode from "react-qr-code";
 // import QRCode from "react-qr-code";

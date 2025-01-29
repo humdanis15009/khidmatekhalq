@@ -289,8 +289,8 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { addDoc, collection } from "firebase/firestore";
-import { db } from "../firebase";
+// import { addDoc, collection } from "firebase/firestore";
+// import { db } from "../firebase";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
