@@ -115,8 +115,7 @@
 //     yPosition = drawField(
 //       doc,
 //       "DOB:",
-//       `${user.day}/${user.month}/${user.year} (${
-//         new Date().getFullYear() - user.year
+//       `${user.day}/${user.month}/${user.year} (${new Date().getFullYear() - user.year
 //       } yrs)`,
 //       leftMargin,
 //       yPosition,
@@ -495,9 +494,8 @@
 //                 </div>
 //                 <div className="flex justify-between lg:text-xl text-gray-600">
 //                   <strong>DOB:</strong>
-//                   <span>{`${user.day}/${user.month}/${user.year} (${
-//                     new Date().getFullYear() - user.year
-//                   } yrs)`}</span>
+//                   <span>{`${user.day}/${user.month}/${user.year} (${new Date().getFullYear() - user.year
+//                     } yrs)`}</span>
 //                 </div>
 //                 <div className="flex justify-between lg:text-xl text-gray-600">
 //                   <strong>Complexion:</strong>

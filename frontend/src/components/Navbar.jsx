@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth, db } from "../Firebase";
-import { collection, addDoc, doc, getDoc } from "firebase/firestore";
+// import { onAuthStateChanged, signOut } from "firebase/auth";
+// import { auth, db } from "../Firebase";
+// import { collection, addDoc, doc, getDoc } from "firebase/firestore";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,8 +13,8 @@ const Navbar = () => {
     phone: "",
   });
   const [messageSent, setMessageSent] = useState(false);
-  const [errorMessage, setErrorMessage] = useState("");
-  const [userFirstName, setUserFirstName] = useState("");
+  // const [errorMessage, setErrorMessage] = useState("");
+  // const [userFirstName, setUserFirstName] = useState("");
 
   const navigate = useNavigate();
 
@@ -23,47 +23,47 @@ const Navbar = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await addDoc(collection(db, "contactRequests"), {
-        name: formData.name,
-        phone: formData.phone,
-      });
-      setMessageSent(true);
-      setFormData({ name: "", phone: "" });
-      setTimeout(() => {
-        setMessageSent(false);
-        setIsPopupOpen(false);
-      }, 3000);
-    } catch (error) {
-      setErrorMessage(error.message);
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await addDoc(collection(db, "contactRequests"), {
+  //       name: formData.name,
+  //       phone: formData.phone,
+  //     });
+  //     setMessageSent(true);
+  //     setFormData({ name: "", phone: "" });
+  //     setTimeout(() => {
+  //       setMessageSent(false);
+  //       setIsPopupOpen(false);
+  //     }, 3000);
+  //   } catch (error) {
+  //     setErrorMessage(error.message);
+  //   }
+  // };
 
-  const [userId, setUserId] = useState("");
-  useEffect(() => {
-    const unsubscribe = onAuthStateChanged(auth, async (user) => {
-      if (user) {
-        setUserId(user.uid);
-        const userDocRef = doc(db, "Biodata", user.uid);
-        const userDocSnap = await getDoc(userDocRef);
-        if (userDocSnap.exists()) {
-          setUserFirstName(userDocSnap.data().firstName);
-        }
-      }
-    });
-    return () => unsubscribe();
-  }, []);
+  // const [userId, setUserId] = useState("");
+  // useEffect(() => {
+  //   const unsubscribe = onAuthStateChanged(auth, async (user) => {
+  //     if (user) {
+  //       setUserId(user.uid);
+  //       const userDocRef = doc(db, "Biodata", user.uid);
+  //       const userDocSnap = await getDoc(userDocRef);
+  //       if (userDocSnap.exists()) {
+  //         setUserFirstName(userDocSnap.data().firstName);
+  //       }
+  //     }
+  //   });
+  //   return () => unsubscribe();
+  // }, []);
 
-  const handleSignOut = async () => {
-    try {
-      await signOut(auth);
-      navigate("/");
-    } catch (error) {
-      console.error("Error signing out:", error);
-    }
-  };
+  // const handleSignOut = async () => {
+  //   try {
+  //     await signOut(auth);
+  //     navigate("/");
+  //   } catch (error) {
+  //     console.error("Error signing out:", error);
+  //   }
+  // };
 
   return (
     <>
@@ -86,16 +86,16 @@ const Navbar = () => {
           <nav>
             <ul className="flex lg:space-x-12 lg:text-xl lg:gap-x-3 gap-x-2 text-[14px]">
               <li>
-                {userId ? (
+                {/* {userId ? (
                   <span className="hover:text-pink-700">
                     {userFirstName ? `${userFirstName}` : ""}
                   </span>
                 ) : (
                   ""
-                )}
+                )} */}
               </li>
               <li>
-                {userId ? (
+                {/* {userId ? (
                   <button
                     onClick={handleSignOut}
                     className="hover:text-pink-700 px-3"
@@ -106,7 +106,8 @@ const Navbar = () => {
                   <Link className="hover:text-pink-700" to="/">
                     Login/Register
                   </Link>
-                )}
+                )} */}
+                Login/Register
               </li>
               <li
                 className="cursor-pointer hover:text-pink-700 hidden md:block"
@@ -224,7 +225,7 @@ const Navbar = () => {
                       alt="email"
                     />
                     <a
-                      href="mailto:nikahjunction@gmail.com"
+                      href="mailto:aasrafoundation11@gmail.com"
                       className="text-[14px] pl-2 text-white hover:underline"
                     >
                       E-mail

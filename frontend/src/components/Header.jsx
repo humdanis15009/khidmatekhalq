@@ -303,21 +303,21 @@ const Header = () => {
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleContactSubmit = async (e) => {
-    e.preventDefault();
-    if (!name || !phone) {
-      setMessage("Please fill in all fields.");
-      return;
-    }
-    try {
-      await addDoc(collection(db, "contactRequests"), { name, phone });
-      setMessage("Thank you! We will contact you shortly.");
-      setName("");
-      setPhone("");
-    } catch (error) {
-      setMessage("Error submitting the form. Please try again later.");
-    }
-  };
+  // const handleContactSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if (!name || !phone) {
+  //     setMessage("Please fill in all fields.");
+  //     return;
+  //   }
+  //   try {
+  //     await addDoc(collection(db, "contactRequests"), { name, phone });
+  //     setMessage("Thank you! We will contact you shortly.");
+  //     setName("");
+  //     setPhone("");
+  //   } catch (error) {
+  //     setMessage("Error submitting the form. Please try again later.");
+  //   }
+  // };
 
   return (
     <header className="fixed w-full bg-white shadow-md z-50">
@@ -383,7 +383,7 @@ const Header = () => {
             </li>
           </ul>
           {pop && (
-            <div className="absolute right-10 mt-64 w-48 bg-white shadow-md rounded-md">
+            <div className="absolute right-3 mt-52 w-48 bg-white shadow-md rounded-md">
               <a
                 href="https://wa.me/+916394958577?text=Hello%20Aasra%20Foundation,%20I%20am%20interested%20in%20learning%20more%20about%20your%20charity%20initiatives.%20Please%20provide%20me%20with%20more%20information."
                 target="_blank"

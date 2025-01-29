@@ -1,16 +1,16 @@
-// import { useEffect, useState } from "react";
-// import {
-//   collection,
-//   getDocs,
-//   doc,
-//   updateDoc,
-//   deleteDoc,
-// } from "firebase/firestore";
-// // import { auth, db } from "../Firebase";
-// import FetchAndGeneratePDF from "./FetchAndGeneratePDF";
-// import { onAuthStateChanged } from "firebase/auth";
-// import { useNavigate } from "react-router-dom";
-// import { Helmet } from "react-helmet-async";
+import { useEffect, useState } from "react";
+import {
+  collection,
+  getDocs,
+  doc,
+  updateDoc,
+  deleteDoc,
+} from "firebase/firestore";
+import { auth, db } from "../Firebase";
+import FetchAndGeneratePDF from "./FetchAndGeneratePDF";
+import { onAuthStateChanged } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 // const AdminDashboard = () => {
 //   const [users, setUsers] = useState([]);
@@ -407,109 +407,109 @@
 //           />
 //         </div>
 
-//         <div className="overflow-x-auto mt-6">
-//           <table className="border border-gray-300 w-full">
-//             <thead>
-//               <tr className="bg-gray-200">
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">#</th>{" "}
-//                 {/* Added column for row numbers */}
-//                 <th className="border px-4 py-2 text-lg lg:px-16 lg:py-2">
-//                   Name
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Sect
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Own Caste
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Preferred Caste
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Age
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Marital Status
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Phone Number
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   E-mail/UID
-//                 </th>
-//                 <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
-//                   Actions
-//                 </th>
-//               </tr>
-//             </thead>
-//             <tbody>
-//               {filteredUsers1.map((user, index) => (
-//                 <tr
-//                   key={user.id}
-//                   className={`hover:bg-gray-100 cursor-pointer ${
-//                     user.paid ? "bg-green-200" : ""
-//                   }`}
-//                   // onClick={() => setSelectedUser(user)}
-//                   onClick={() => handleRowClick(user)}
-//                 >
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {index + 1}
-//                   </td>{" "}
-//                   {/* Display row number */}
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.firstName || user.lastName
-//                       ? `${user.firstName || ""} ${user.lastName || ""}`
-//                       : "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.sect || "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.caste || "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.prefCaste || "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {new Date().getFullYear() - user.year || "N/A"} yrs
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.maritalStatus || "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.mobileNumber || "N/A"} <br />
-//                     {user.whatsappNo || "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     {user.email.substring(0, user.email.indexOf("@")) || "N/A"}{" "}
-//                     <br />
-//                     {user.id.substring(0, 5) || "N/A"}
-//                   </td>
-//                   <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
-//                     <button
-//                       onClick={(event) => {
-//                         event.stopPropagation();
-//                         handleEditClick(user);
-//                       }}
-//                       className="bg-blue-500 text-white p-1 mr-2 px-[15px] rounded"
-//                     >
-//                       Edit
-//                     </button>
-//                     <button
-//                       onClick={(event) => {
-//                         event.stopPropagation();
-//                         handleDeleteClick(user.id);
-//                       }}
-//                       className="bg-red-500 text-white mt-1 p-1 rounded"
-//                     >
-//                       Delete
-//                     </button>
-//                   </td>
-//                 </tr>
-//               ))}
-//             </tbody>
-//           </table>
-//         </div>
+        <div className="overflow-x-auto mt-6">
+          <table className="border border-gray-300 w-full">
+            <thead>
+              <tr className="bg-gray-200">
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">#</th>{" "}
+                {/* Added column for row numbers */}
+                <th className="border px-4 py-2 text-lg lg:px-16 lg:py-2">
+                  Name
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Sect
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Own Caste
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Preferred Caste
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Age
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Marital Status
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Phone Number
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  E-mail/UID
+                </th>
+                <th className="border px-4 py-2 text-lg lg:px-4 lg:py-2">
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredUsers1.map((user, index) => (
+                <tr
+                  key={user.id}
+                  className={`hover:bg-gray-100 cursor-pointer ${
+                    user.paid ? "bg-green-200" : ""
+                  }`}
+                  // onClick={() => setSelectedUser(user)}
+                  onClick={() => handleRowClick(user)}
+                >
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {index + 1}
+                  </td>{" "}
+                  {/* Display row number */}
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.firstName || user.lastName
+                      ? `${user.firstName || ""} ${user.lastName || ""}`
+                      : "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.sect || "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.caste || "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.prefCaste || "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {new Date().getFullYear() - user.year || "N/A"} yrs
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.maritalStatus || "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.mobileNumber || "N/A"} <br />
+                    {user.whatsappNo || "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    {user.email.substring(0, user.email.indexOf("@")) || "N/A"}{" "}
+                    <br />
+                    {user.id.substring(0, 5) || "N/A"}
+                  </td>
+                  <td className="border px-2 py-2 text-lg lg:px-4 lg:py-2">
+                    <button
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        handleEditClick(user);
+                      }}
+                      className="bg-blue-500 text-white p-1 mr-2 px-[15px] rounded"
+                    >
+                      Edit
+                    </button>
+                    <button
+                      onClick={(event) => {
+                        event.stopPropagation();
+                        handleDeleteClick(user.id);
+                      }}
+                      className="bg-red-500 text-white mt-1 p-1 rounded"
+                    >
+                      Delete
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
 
 //         {/* Edit Form */}
 //         {editMode && (

@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 // import { collection, onSnapshot } from "firebase/firestore";
 
 function Card() {
-  const [userCount, setUserCount] = useState();
-  const [str, setStr] = useState();
+  // const [userCount, setUserCount] = useState();
+  // const [str, setStr] = useState();
 
-  useEffect(() => {
+  // useEffect(() => {
     // const usersCollection = collection(db, "Biodata");
 
     // const unsubscribe = onSnapshot(usersCollection, (snapshot) => {
@@ -19,8 +19,8 @@ function Card() {
 
     // setStr(strrr);
 
-    // return () => unsubscribe();
-  }, [userCount]);
+  //   return () => unsubscribe();
+  // }, [userCount]);
 
   return (
     <>
