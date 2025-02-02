@@ -102,12 +102,12 @@ const Navbar = () => {
                   >
                     Logout
                   </button>
-                ) : (
-                  <Link className="hover:text-pink-700" to="/">
+                ) : ( */}
+                  <Link className="hover:text-pink-700" to="login">
                     Login/Register
                   </Link>
-                )} */}
-                Login/Register
+                {/* )} */}
+                {/* Login/Register */}
               </li>
               <li
                 className="cursor-pointer hover:text-pink-700 hidden md:block"

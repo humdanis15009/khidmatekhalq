@@ -6,7 +6,6 @@ import TryCatch from "../middlewares/TryCatch.js";
 
 export const register = TryCatch(async (req, res) => {
   const { email, name, password } = req.body;
-
   let user = await User.findOne({ email });
 
   if (user)

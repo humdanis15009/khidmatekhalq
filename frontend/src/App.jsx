@@ -3,6 +3,10 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import ZakatCalculator from "./components/ZakatCalculator";
 import Blogs from "./components/Blogs";
+import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
+import Verify from "./pages/auth/verify";
+import { UserContextProvider } from "./context/userContext";
 
 const Home = lazy(() => import("./components/Home"));
 const Tnc = lazy(() => import("./components/Tnc"));
@@ -13,8 +17,9 @@ const Privacy = lazy(() => import("./components/Privacy"));
 const AdminDashboard = lazy(() => import("./components/AdminDashboard"));
 const Services = lazy(() => import("./components/Services"));
 const Volunteer = lazy(() => import("./components/Volunteer"));
-
+export const server = 'http://localhost:5000'
 function App() {
+  
   const router = createBrowserRouter([
     {
       path: "/",
@@ -64,6 +69,18 @@ function App() {
           path: "Blogs",
           element: <Blogs />,
         },
+        {
+          path: "login",
+          element: <Login />,
+        },
+        {
+          path: "register",
+          element: <Register />,
+        },
+        {
+          path: "verify",
+          element: <Verify />,
+        },
       ],
     },
   ]);
@@ -81,7 +98,10 @@ function App() {
           </div>
         }
       >
-        <RouterProvider router={router} />
+        <UserContextProvider>
+          <RouterProvider router={router} />
+        </UserContextProvider>
+
       </Suspense>
     </>
   );
