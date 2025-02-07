@@ -323,21 +323,20 @@ const Header = () => {
     <header className="fixed w-full bg-white shadow-md z-50">
       <div className="flex mx-2 justify-between items-center">
         <div
-          className="lg:text-[70px] flex text-[29px] lg:leading-[60px] leading-[26px] pt-1 font-extrabold"
+          className="lg:text-[60px] flex text-[29px] lg:leading-[60px] leading-[26px] pt-2 font-extrabold"
           style={{ fontFamily: "Dancing Script" }}
         >
           Aasra Foundation
           <img
-            className="lg:h-[86px] lg:w-20 h-9 w-8 lg:ml-0 ml-1"
+            className="absolute lg:h-[86px] lg:w-20 h-9 w-8 lg:ml-0 ml-1 left-[400px] top-1"
             src="images/logo2.png"
           />
         </div>
 
         <nav className="hidden mt-16 text-2xl md:flex space-x-8 items-center">
           <ul
-            className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-2xl text-sm font-semibold flex flex-col bg-gray-800 lg:top-0 lg:left-0 absolute left-[10px] w-[90%] lg:w-auto transition-transform ${
-              menuOpen ? "translate-y-0" : "-translate-y-full"
-            }`}
+            className={`lg:flex lg:static lg:flex-row lg:bg-transparent lg:gap-x-20 lg:text-xl text-sm font-semibold flex flex-col bg-gray-800 lg:top-0 lg:left-0 absolute left-[10px] w-[90%] lg:w-auto transition-transform ${menuOpen ? "translate-y-0" : "-translate-y-full"
+              }`}
           >
             <li className="cursor-pointer relative group py-2 lg:py-0 text-center">
               <p className="after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full">
@@ -374,9 +373,8 @@ const Header = () => {
               onClick={() => setPop((prev) => !prev)}
             >
               <p
-                className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${
-                  pop ? "text-green-800" : "text-black"
-                }`}
+                className={`after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-yellow-500 after:transition-all after:duration-300 group-hover:after:w-full ${pop ? "text-green-800" : "text-black"
+                  }`}
               >
                 Contact Us &#x25BE;
               </p>
@@ -456,7 +454,7 @@ const Header = () => {
               Contact Us
             </Link>
             {pop && (
-              <div className="absolute right-10 mt-64 w-48 bg-white shadow-md rounded-md">
+              <div className="absolute right-4 mt-64 w-48 bg-white shadow-md rounded-md">
                 <a
                   href="https://wa.me/+916394958577"
                   target="_blank"
