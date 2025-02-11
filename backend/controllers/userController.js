@@ -39,7 +39,7 @@ export const register = TryCatch(async (req, res) => {
     otp,
   };
 
-  await sendMail(email, "E learning", data);
+  await sendMail(email, "Asa", data);
 
   res.status(200).json({
     message: "otp sent to your mail",
@@ -105,3 +105,4 @@ export const myProfile = TryCatch(async (req, res) => {
 
   res.json({ user });
 });
+

@@ -11,6 +11,7 @@ export const UserContextProvider = ({ children }) => {
     const [isAuth, setIsAuth] = useState(false)
     const [btnLoading, setBtnLoading] = useState(false)
     const [loading, setLoading] = useState(true)
+
     async function loginUser(email, password, navigate) {
         setBtnLoading(true)
         try {
@@ -62,7 +63,7 @@ export const UserContextProvider = ({ children }) => {
         setBtnLoading(true)
         try {
             console.log(name, email, password)
-           
+
             const { data } = await axios.post(`${server}/api/user/register`, {
                 name,
                 email,
@@ -88,7 +89,7 @@ export const UserContextProvider = ({ children }) => {
                 activationToken,
             })
             toast.success(data.message)
-            navigate("/")
+            navigate("/login")
             localStorage.clear()
             setBtnLoading(false)
         } catch (error) {
@@ -107,6 +108,7 @@ export const UserContextProvider = ({ children }) => {
             setIsAuth(true)
             setUser(data.user)
             setLoading(false)
+            console.log(data);
 
         } catch (error) {
             console.log(error)
